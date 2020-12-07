@@ -1,0 +1,130 @@
+.contenedor-storage {
+    background-color: hsl(228, 56%, 26%);
+    width: 440px;
+    height: 96px;
+    border-radius: 15px;
+    position: relative;
+    top: 40vh;
+    left: 42vw;
+    color: hsl(229, 7%, 55%);
+    padding: 1em 2em;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 2em;
+}
+
+.color-resalto {
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+}
+
+.progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 1em;
+    width: 98%;
+    height: .8em;
+    padding: 3px;
+}
+
+.avance {
+    width: 81.5%;
+    height: 100%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius: 1em;
+}
+
+.puntero {
+    border-radius: 50%;
+    background-color: hsl(243, 100%, 93%);
+    height: 90%;
+    width: .7em;
+    position: relative;
+    left: 97%;
+}
+
+.texto-info {
+    position: relative;
+    left: 86%;
+    top: -2.2em;
+}
+
+.dialogo {
+    position: relative;
+    left: 64.08%;
+    top: 5em;
+    width: 136px;
+    height: 40px;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 10px;
+    color: hsl(229, 57%, 11%);
+    padding: 1em;
+}
+
+.dialog-number {
+    position: relative;
+    top: -1em;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.dialog-text {
+    color: hsl(229, 7%, 55%);
+    font-size: .4em;
+    margin-left: 1em;
+}
+
+.triangulo {
+    width: 0px;
+    height: 0px;
+    border-top: 22px solid hsl(243, 100%, 93%);
+    border-left: 30px solid transparent;
+    border-right: 1px solid transparent;
+    position: relative;
+    left: 73.3vw;
+    top: 4.5em;
+}
+
+.fondo {
+    background-image: url('../../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100%;
+    position: relative;
+    top: 4.8em;
+    height: 54vh;
+    z-index: -1;
+}
+
+@media (max-width: 376px) {
+    .contenedor-storage {
+        top: 18em;
+        left: 1.5em;
+        margin: 1em;
+        width: 66%;
+        height: 10em;
+    }
+
+    .fondo {
+        background-image: url('../../images/bg-mobile.png');
+        position: absolute;
+        top: 0em;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .dialogo {
+        top: 13em;
+        left: 6em;
+        box-sizing: content-box;
+    }
+
+    .texto-info {
+        left: 76%;
+    }
+
+    .triangulo {
+        visibility: hidden;
+    }
+}
